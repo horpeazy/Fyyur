@@ -1,0 +1,514 @@
+
+2022-05-28 01:43:44,698 INFO: errors [in C:\Users\user\Desktop\01_fyyur\starter_code\app.py:744]
+2022-05-28 01:43:47,721 INFO: errors [in C:\Users\user\Desktop\01_fyyur\starter_code\app.py:744]
+2022-05-28 01:45:19,568 INFO: errors [in C:\Users\user\Desktop\01_fyyur\starter_code\app.py:744]
+2022-05-28 01:45:21,943 INFO: errors [in C:\Users\user\Desktop\01_fyyur\starter_code\app.py:744]
+2022-05-28 01:49:14,243 INFO: errors [in C:\Users\user\Desktop\01_fyyur\starter_code\app.py:744]
+2022-05-28 01:49:16,748 INFO: errors [in C:\Users\user\Desktop\01_fyyur\starter_code\app.py:744]
+2022-05-28 01:52:11,241 INFO: errors [in C:\Users\user\Desktop\01_fyyur\starter_code\app.py:744]
+2022-05-28 01:52:16,901 INFO: errors [in C:\Users\user\Desktop\01_fyyur\starter_code\app.py:744]
+2022-05-28 01:52:37,727 INFO: errors [in C:\Users\user\Desktop\01_fyyur\starter_code\app.py:744]
+2022-05-28 01:52:40,035 INFO: errors [in C:\Users\user\Desktop\01_fyyur\starter_code\app.py:744]
+2022-05-28 02:11:37,391 INFO: errors [in C:\Users\user\Desktop\Fyyur\app.py:744]
+2022-05-28 02:11:39,965 INFO: errors [in C:\Users\user\Desktop\Fyyur\app.py:744]
+2022-05-28 02:16:58,152 INFO: errors [in C:\Users\user\Desktop\Fyyur\app.py:744]
+2022-05-28 08:00:06,012 INFO: errors [in C:\Users\user\Desktop\Fyyur - Copy\app.py:744]
+2022-05-28 08:00:08,822 INFO: errors [in C:\Users\user\Desktop\Fyyur - Copy\app.py:744]
+2022-05-28 08:43:50,103 INFO: errors [in C:\Users\user\Desktop\Fyyur - Copy\app.py:744]
+2022-05-28 14:20:19,566 INFO: errors [in C:\Users\user\Desktop\Fyyur - Copy\app.py:744]
+2022-05-28 14:20:19,909 INFO: errors [in app.py:744]
+2022-05-28 14:20:19,909 INFO: errors [in app.py:744]
+2022-05-28 14:24:55,809 INFO: errors [in C:\Users\user\Desktop\Fyyur - Copy\app.py:744]
+2022-05-28 14:24:58,106 INFO: errors [in app.py:744]
+2022-05-28 14:24:58,106 INFO: errors [in app.py:744]
+2022-05-28 14:29:22,624 INFO: errors [in C:\Users\user\Desktop\Fyyur\app.py:744]
+2022-05-28 14:29:25,139 INFO: errors [in app.py:744]
+2022-05-28 14:29:25,139 INFO: errors [in app.py:744]
+2022-05-28 14:38:57,310 INFO: errors [in C:\Users\user\Desktop\Fyyur\app.py:741]
+2022-05-28 14:38:59,195 INFO: errors [in app.py:741]
+2022-05-28 14:38:59,195 INFO: errors [in app.py:741]
+2022-05-28 14:39:09,499 ERROR: Exception on /artists/1/edit [POST] [in C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\util\_collections.py", line 1008, in __call__
+    return self.registry[key]
+KeyError: <greenlet.greenlet object at 0x043D81E0 (otid=0x043D60F0) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 368, in edit_artist_submission
+    artist = Artist.query.filter_by(id=artist_id).one()
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_sqlalchemy\__init__.py", line 514, in __get__
+    return type.query_class(mapper, session=self.sa.session())
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\scoping.py", line 47, in __call__
+    sess = self.registry()
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\util\_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\session.py", line 4209, in __call__
+    return self.class_(**local_kw)
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_sqlalchemy\__init__.py", line 138, in __init__
+    bind = options.pop('bind', None) or db.engine
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_sqlalchemy\__init__.py", line 943, in engine
+    return self.get_engine()
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_sqlalchemy\__init__.py", line 953, in get_engine
+    state = get_state(app)
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_sqlalchemy\__init__.py", line 586, in get_state
+    assert 'sqlalchemy' in app.extensions, \
+AssertionError: The sqlalchemy extension was not registered to the current application.  Please make sure to call init_app() first.
+2022-05-28 14:39:09,499 ERROR: Exception on /artists/1/edit [POST] [in C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\util\_collections.py", line 1008, in __call__
+    return self.registry[key]
+KeyError: <greenlet.greenlet object at 0x043D81E0 (otid=0x043D60F0) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 368, in edit_artist_submission
+    artist = Artist.query.filter_by(id=artist_id).one()
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_sqlalchemy\__init__.py", line 514, in __get__
+    return type.query_class(mapper, session=self.sa.session())
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\scoping.py", line 47, in __call__
+    sess = self.registry()
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\util\_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\session.py", line 4209, in __call__
+    return self.class_(**local_kw)
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_sqlalchemy\__init__.py", line 138, in __init__
+    bind = options.pop('bind', None) or db.engine
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_sqlalchemy\__init__.py", line 943, in engine
+    return self.get_engine()
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_sqlalchemy\__init__.py", line 953, in get_engine
+    state = get_state(app)
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_sqlalchemy\__init__.py", line 586, in get_state
+    assert 'sqlalchemy' in app.extensions, \
+AssertionError: The sqlalchemy extension was not registered to the current application.  Please make sure to call init_app() first.
+2022-05-28 14:39:50,342 ERROR: Exception on / [GET] [in C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\util\_collections.py", line 1008, in __call__
+    return self.registry[key]
+KeyError: <greenlet.greenlet object at 0x046C3E40 (otid=0x043D6C08) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 46, in index
+    artists = db.session.query(Artist.id, Artist.name).order_by(db.desc(Artist.id)).limit(10).all()
+  File "<string>", line 2, in query
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\scoping.py", line 24, in _proxied
+    return self.registry()
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\util\_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\session.py", line 4209, in __call__
+    return self.class_(**local_kw)
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_sqlalchemy\__init__.py", line 138, in __init__
+    bind = options.pop('bind', None) or db.engine
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_sqlalchemy\__init__.py", line 943, in engine
+    return self.get_engine()
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_sqlalchemy\__init__.py", line 953, in get_engine
+    state = get_state(app)
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_sqlalchemy\__init__.py", line 586, in get_state
+    assert 'sqlalchemy' in app.extensions, \
+AssertionError: The sqlalchemy extension was not registered to the current application.  Please make sure to call init_app() first.
+2022-05-28 14:39:50,342 ERROR: Exception on / [GET] [in C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\util\_collections.py", line 1008, in __call__
+    return self.registry[key]
+KeyError: <greenlet.greenlet object at 0x046C3E40 (otid=0x043D6C08) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 46, in index
+    artists = db.session.query(Artist.id, Artist.name).order_by(db.desc(Artist.id)).limit(10).all()
+  File "<string>", line 2, in query
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\scoping.py", line 24, in _proxied
+    return self.registry()
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\util\_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\session.py", line 4209, in __call__
+    return self.class_(**local_kw)
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_sqlalchemy\__init__.py", line 138, in __init__
+    bind = options.pop('bind', None) or db.engine
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_sqlalchemy\__init__.py", line 943, in engine
+    return self.get_engine()
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_sqlalchemy\__init__.py", line 953, in get_engine
+    state = get_state(app)
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_sqlalchemy\__init__.py", line 586, in get_state
+    assert 'sqlalchemy' in app.extensions, \
+AssertionError: The sqlalchemy extension was not registered to the current application.  Please make sure to call init_app() first.
+2022-05-28 14:39:58,617 ERROR: Exception on / [GET] [in C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\util\_collections.py", line 1008, in __call__
+    return self.registry[key]
+KeyError: <greenlet.greenlet object at 0x046EBA78 (otid=0x047218E8) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 46, in index
+    artists = db.session.query(Artist.id, Artist.name).order_by(db.desc(Artist.id)).limit(10).all()
+  File "<string>", line 2, in query
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\scoping.py", line 24, in _proxied
+    return self.registry()
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\util\_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\session.py", line 4209, in __call__
+    return self.class_(**local_kw)
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_sqlalchemy\__init__.py", line 138, in __init__
+    bind = options.pop('bind', None) or db.engine
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_sqlalchemy\__init__.py", line 943, in engine
+    return self.get_engine()
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_sqlalchemy\__init__.py", line 953, in get_engine
+    state = get_state(app)
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_sqlalchemy\__init__.py", line 586, in get_state
+    assert 'sqlalchemy' in app.extensions, \
+AssertionError: The sqlalchemy extension was not registered to the current application.  Please make sure to call init_app() first.
+2022-05-28 14:39:58,617 ERROR: Exception on / [GET] [in C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\util\_collections.py", line 1008, in __call__
+    return self.registry[key]
+KeyError: <greenlet.greenlet object at 0x046EBA78 (otid=0x047218E8) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 46, in index
+    artists = db.session.query(Artist.id, Artist.name).order_by(db.desc(Artist.id)).limit(10).all()
+  File "<string>", line 2, in query
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\scoping.py", line 24, in _proxied
+    return self.registry()
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\util\_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\session.py", line 4209, in __call__
+    return self.class_(**local_kw)
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_sqlalchemy\__init__.py", line 138, in __init__
+    bind = options.pop('bind', None) or db.engine
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_sqlalchemy\__init__.py", line 943, in engine
+    return self.get_engine()
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_sqlalchemy\__init__.py", line 953, in get_engine
+    state = get_state(app)
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_sqlalchemy\__init__.py", line 586, in get_state
+    assert 'sqlalchemy' in app.extensions, \
+AssertionError: The sqlalchemy extension was not registered to the current application.  Please make sure to call init_app() first.
+2022-05-28 14:42:34,995 INFO: errors [in C:\Users\user\Desktop\Fyyur\app.py:741]
+2022-05-28 14:42:35,669 INFO: errors [in app.py:741]
+2022-05-28 14:42:35,669 INFO: errors [in app.py:741]
+2022-05-28 14:42:45,073 ERROR: Exception on / [GET] [in C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\util\_collections.py", line 1008, in __call__
+    return self.registry[key]
+KeyError: <greenlet.greenlet object at 0x04139CE0 (otid=0x04251BB8) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 46, in index
+    artists = db.session.query(Artist.id, Artist.name).order_by(db.desc(Artist.id)).limit(10).all()
+  File "<string>", line 2, in query
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\scoping.py", line 24, in _proxied
+    return self.registry()
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\util\_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\session.py", line 4209, in __call__
+    return self.class_(**local_kw)
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_sqlalchemy\__init__.py", line 138, in __init__
+    bind = options.pop('bind', None) or db.engine
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_sqlalchemy\__init__.py", line 943, in engine
+    return self.get_engine()
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_sqlalchemy\__init__.py", line 953, in get_engine
+    state = get_state(app)
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_sqlalchemy\__init__.py", line 586, in get_state
+    assert 'sqlalchemy' in app.extensions, \
+AssertionError: The sqlalchemy extension was not registered to the current application.  Please make sure to call init_app() first.
+2022-05-28 14:42:45,073 ERROR: Exception on / [GET] [in C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\util\_collections.py", line 1008, in __call__
+    return self.registry[key]
+KeyError: <greenlet.greenlet object at 0x04139CE0 (otid=0x04251BB8) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 46, in index
+    artists = db.session.query(Artist.id, Artist.name).order_by(db.desc(Artist.id)).limit(10).all()
+  File "<string>", line 2, in query
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\scoping.py", line 24, in _proxied
+    return self.registry()
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\util\_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\session.py", line 4209, in __call__
+    return self.class_(**local_kw)
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_sqlalchemy\__init__.py", line 138, in __init__
+    bind = options.pop('bind', None) or db.engine
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_sqlalchemy\__init__.py", line 943, in engine
+    return self.get_engine()
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_sqlalchemy\__init__.py", line 953, in get_engine
+    state = get_state(app)
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_sqlalchemy\__init__.py", line 586, in get_state
+    assert 'sqlalchemy' in app.extensions, \
+AssertionError: The sqlalchemy extension was not registered to the current application.  Please make sure to call init_app() first.
+2022-05-28 14:50:43,342 INFO: errors [in app.py:747]
+2022-05-28 14:54:58,592 INFO: errors [in C:\Users\user\Desktop\Fyyur\app.py:744]
+2022-05-28 14:54:58,753 INFO: errors [in app.py:744]
+2022-05-28 14:54:58,753 INFO: errors [in app.py:744]
+2022-05-28 14:57:57,566 INFO: errors [in C:\Users\user\Desktop\Fyyur\app.py:744]
+2022-05-28 14:57:57,726 INFO: errors [in app.py:744]
+2022-05-28 14:57:57,726 INFO: errors [in app.py:744]
+2022-05-28 15:05:13,655 INFO: errors [in C:\Users\user\Desktop\Fyyur\flaskapp.py:744]
+2022-05-28 15:05:13,826 INFO: errors [in flaskapp.py:744]
+2022-05-28 15:05:13,826 INFO: errors [in flaskapp.py:744]
+2022-05-28 15:05:24,069 ERROR: Exception on / [GET] [in C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\util\_collections.py", line 1008, in __call__
+    return self.registry[key]
+KeyError: <greenlet.greenlet object at 0x0413BCE0 (otid=0x04135D98) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "flaskapp.py", line 49, in index
+    artists = db.session.query(Artist.id, Artist.name).order_by(db.desc(Artist.id)).limit(10).all()
+  File "<string>", line 2, in query
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\scoping.py", line 24, in _proxied
+    return self.registry()
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\util\_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\session.py", line 4209, in __call__
+    return self.class_(**local_kw)
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_sqlalchemy\__init__.py", line 138, in __init__
+    bind = options.pop('bind', None) or db.engine
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_sqlalchemy\__init__.py", line 943, in engine
+    return self.get_engine()
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_sqlalchemy\__init__.py", line 953, in get_engine
+    state = get_state(app)
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_sqlalchemy\__init__.py", line 586, in get_state
+    assert 'sqlalchemy' in app.extensions, \
+AssertionError: The sqlalchemy extension was not registered to the current application.  Please make sure to call init_app() first.
+2022-05-28 15:05:24,069 ERROR: Exception on / [GET] [in C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\util\_collections.py", line 1008, in __call__
+    return self.registry[key]
+KeyError: <greenlet.greenlet object at 0x0413BCE0 (otid=0x04135D98) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "flaskapp.py", line 49, in index
+    artists = db.session.query(Artist.id, Artist.name).order_by(db.desc(Artist.id)).limit(10).all()
+  File "<string>", line 2, in query
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\scoping.py", line 24, in _proxied
+    return self.registry()
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\util\_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\sqlalchemy\orm\session.py", line 4209, in __call__
+    return self.class_(**local_kw)
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_sqlalchemy\__init__.py", line 138, in __init__
+    bind = options.pop('bind', None) or db.engine
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_sqlalchemy\__init__.py", line 943, in engine
+    return self.get_engine()
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_sqlalchemy\__init__.py", line 953, in get_engine
+    state = get_state(app)
+  File "C:\Users\user\Desktop\Udacity Project\FSND\projects\01_fyyur\starter_code\env\lib\site-packages\flask_sqlalchemy\__init__.py", line 586, in get_state
+    assert 'sqlalchemy' in app.extensions, \
+AssertionError: The sqlalchemy extension was not registered to the current application.  Please make sure to call init_app() first.
+2022-05-28 15:15:05,513 INFO: errors [in flaskapp.py:746]
+2022-05-28 15:25:27,963 INFO: errors [in flaskapp.py:748]
+2022-05-28 15:32:41,297 INFO: errors [in flaskapp.py:746]
+2022-05-28 15:34:15,279 INFO: errors [in flaskapp.py:746]
+2022-05-29 00:53:37,483 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:743]
+2022-05-29 09:49:07,453 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:577]
+2022-05-29 09:52:22,722 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:578]
+2022-05-29 09:57:16,849 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:578]
+2022-05-29 09:58:23,771 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:578]
+2022-05-29 09:58:38,516 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:578]
+2022-05-29 09:58:56,767 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:578]
+2022-05-29 09:59:48,526 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:578]
+2022-05-29 09:59:51,792 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:578]
+2022-05-29 10:00:21,538 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:578]
+2022-05-29 10:00:36,792 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:578]
+2022-05-29 10:01:29,564 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:578]
+2022-05-29 10:02:34,611 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:578]
+2022-05-29 10:06:46,327 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:587]
+2022-05-29 10:06:55,418 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:587]
+2022-05-29 10:07:16,237 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:587]
+2022-05-29 10:07:21,777 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:587]
+2022-05-29 10:08:16,127 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:587]
+2022-05-29 10:08:23,506 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:587]
+2022-05-29 10:08:55,222 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:587]
+2022-05-29 10:11:30,606 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:588]
+2022-05-29 10:12:13,821 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:588]
+2022-05-29 10:12:52,540 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:588]
+2022-05-29 10:13:51,457 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:588]
+2022-05-29 10:15:01,361 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:588]
+2022-05-29 10:15:35,788 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:588]
+2022-05-29 10:15:54,906 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:588]
+2022-05-29 10:16:12,144 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:588]
+2022-05-29 10:16:14,519 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:588]
+2022-05-29 10:16:52,825 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:588]
+2022-05-29 10:17:27,126 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:589]
+2022-05-29 10:17:32,051 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:589]
+2022-05-29 10:18:29,064 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:588]
+2022-05-29 10:19:23,505 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:588]
+2022-05-29 10:20:18,895 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:588]
+2022-05-29 10:21:02,626 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:588]
+2022-05-29 10:21:32,162 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:588]
+2022-05-29 10:21:42,124 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:588]
+2022-05-29 10:26:40,710 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:586]
+2022-05-29 10:28:51,123 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:586]
+2022-05-29 10:35:09,747 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:588]
+2022-05-29 10:35:19,892 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:588]
+2022-05-29 10:37:05,959 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:586]
+2022-05-29 10:40:32,445 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:586]
+2022-05-29 10:41:47,635 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:589]
+2022-05-29 10:43:29,464 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:590]
+2022-05-29 10:45:47,049 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:589]
+2022-05-29 10:52:34,002 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:598]
+2022-05-29 11:02:08,904 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:605]
+2022-05-29 11:05:31,251 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:595]
+2022-05-29 11:12:59,946 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:595]
+2022-05-29 11:14:45,963 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:595]
+2022-05-29 11:16:10,835 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:595]
+2022-05-29 11:17:09,308 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:595]
+2022-05-29 11:19:51,324 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:595]
+2022-05-29 11:19:54,467 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:595]
+2022-05-29 11:22:51,549 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:595]
+2022-05-29 11:32:42,671 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:595]
+2022-05-29 11:41:11,396 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:605]
+2022-05-29 11:42:53,915 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:605]
+2022-05-29 11:44:04,400 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:605]
+2022-05-29 11:47:28,669 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:605]
+2022-05-29 11:47:31,565 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:605]
+2022-05-29 11:47:46,110 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:605]
+2022-05-29 11:47:48,502 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:605]
+2022-05-29 11:48:43,883 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:604]
+2022-05-29 11:49:37,807 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:604]
+2022-05-29 11:55:24,512 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:604]
+2022-05-29 11:57:14,965 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:605]
+2022-05-29 12:00:02,291 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:605]
+2022-05-29 12:00:29,099 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:604]
+2022-05-29 12:09:21,098 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:606]
+2022-05-29 12:13:23,294 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:606]
+2022-05-29 12:22:50,713 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:617]
+2022-05-29 12:23:28,198 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:619]
+2022-05-29 12:24:33,893 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:610]
+2022-05-29 12:27:46,730 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:609]
+2022-05-29 12:47:03,995 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:609]
+2022-05-29 12:47:26,661 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:609]
+2022-05-29 12:49:40,230 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:612]
+2022-05-29 12:50:13,178 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:613]
+2022-05-29 12:50:44,079 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:614]
+2022-05-29 12:56:08,906 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:614]
+2022-05-29 12:56:46,978 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:614]
+2022-05-29 12:57:03,094 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:614]
+2022-05-29 12:58:49,241 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:614]
+2022-05-29 13:49:03,794 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:614]
+2022-05-29 13:49:12,598 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:614]
+2022-05-29 13:52:42,096 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:614]
+2022-05-29 13:57:19,447 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:615]
+2022-05-29 13:59:35,358 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:615]
+2022-05-29 14:02:08,084 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:615]
+2022-05-29 14:03:22,125 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:615]
+2022-05-29 14:03:38,487 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:615]
+2022-05-29 14:05:25,199 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:616]
+2022-05-29 14:07:42,945 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:615]
+2022-05-29 14:10:09,984 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:616]
+2022-05-29 14:11:40,263 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:616]
+2022-05-29 14:11:49,020 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:616]
+2022-05-29 14:14:29,454 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:616]
+2022-05-29 14:21:07,215 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:616]
+2022-05-29 14:23:09,144 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:616]
+2022-05-29 14:26:57,902 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:616]
+2022-05-29 14:28:41,381 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:616]
+2022-05-29 14:30:40,039 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:616]
+2022-05-29 14:30:57,173 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:616]
+2022-05-29 14:36:17,923 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:616]
+2022-05-29 14:36:50,415 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:616]
+2022-05-29 14:37:29,998 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:616]
+2022-05-29 14:38:03,826 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:616]
+2022-05-29 14:39:02,195 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:616]
+2022-05-29 14:39:29,950 INFO: errors [in C:\Users\user\Desktop\Udacity Project\Fyyur\app.py:616]
+2022-05-29 18:45:11,692 INFO: errors [in C:\Users\user\Desktop\Fyyur\app.py:616]
+2022-05-29 18:46:33,479 INFO: errors [in C:\Users\user\Desktop\Fyyur\app.py:616]
+2022-05-29 18:46:47,820 INFO: errors [in C:\Users\user\Desktop\Fyyur\app.py:616]
+2022-05-29 18:46:55,141 INFO: errors [in C:\Users\user\Desktop\Fyyur\app.py:616]
