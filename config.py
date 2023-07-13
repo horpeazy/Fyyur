@@ -8,5 +8,5 @@ DEBUG = False
 
 # Connect to the database
 
-SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:afisuru123@localhost:5432/finalsubmit'
+SQLALCHEMY_DATABASE_URI = 'postgresql://horpeazy:afisuru123@localhost:5432/fyyur'
 SQLALCHEMY_TRACK_MODIFICATIONS = False
